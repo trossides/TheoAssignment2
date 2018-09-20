@@ -12,7 +12,7 @@ angular.module('firebaseConfig', ['firebase'])
   firebase.initializeApp(config);
 
 })
-
+//
 /*
 
 .service("TodoExample", ["$firebaseArray", function($firebaseArray){
