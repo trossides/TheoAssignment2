@@ -57,7 +57,8 @@
     <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
     <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
     <script src="js/firebase.init.js"></script>
-   <!-- <script>
+
+   <script>
       // [START get_messaging_object]
       // Retrieve Firebase Messaging object.
       const messaging = firebase.messaging();
@@ -66,7 +67,25 @@
       // Add the public key generated from the console here.
       messaging.usePublicVapidKey('AIzaSyCy6Pj5L2JHERiPObGdp4-2dsn2sR3St-Y');
       // [END set_public_vapid_key]
-    </script>-->
+
+      function requestPermission() {
+        console.log('Requesting permission...');
+      // [START request_permission]
+        messaging.requestPermission().then(function() {
+          console.log('Notification permission granted.');
+        // TODO(developer): Retrieve an Instance ID token for use with FCM.
+        // [START_EXCLUDE]
+        // In many cases once an app has been granted notification permission, it
+        // should update its UI reflecting this.
+          resetUI();
+        // [END_EXCLUDE]
+      }).catch(function(err) {
+        console.log('Unable to get permission to notify.', err);
+      });
+      // [END request_permission]
+    }
+      
+  </script>
 
     <!-- Only required for Tab projects w/ pages in multiple tabs 
     <script src="lib/ionicuirouter/ionicUIRouter.js"></script>

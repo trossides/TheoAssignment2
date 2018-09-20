@@ -11,13 +11,13 @@ angular.module('firebaseConfig', ['firebase'])
   };
   firebase.initializeApp(config);
 
-  const messaging = firebase.messaging();
+  /*const messaging = firebase.messaging();
   messaging.requestPermission().then(function() {
     console.log('Notification permission granted.');
   })
   .catch(function(err) {
     console.log('Unable to get permission to notify.', err);
-  });
+  });*/
 
 })
 //
