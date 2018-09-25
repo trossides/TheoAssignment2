@@ -5,7 +5,19 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
 
-    
+    <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDgC7WbYIVLnAyCql2fXOhwsCERl-HcdqY",
+    authDomain: "authfirebase-40b1e.firebaseapp.com",
+    databaseURL: "https://authfirebase-40b1e.firebaseio.com",
+    projectId: "authfirebase-40b1e",
+    storageBucket: "authfirebase-40b1e.appspot.com",
+    messagingSenderId: "848381304196"
+  };
+  firebase.initializeApp(config);
+</script>
     
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
@@ -58,19 +70,7 @@
     <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
     <script src="js/firebase.init.js"></script>
 
-<script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyDgC7WbYIVLnAyCql2fXOhwsCERl-HcdqY",
-    authDomain: "authfirebase-40b1e.firebaseapp.com",
-    databaseURL: "https://authfirebase-40b1e.firebaseio.com",
-    projectId: "authfirebase-40b1e",
-    storageBucket: "authfirebase-40b1e.appspot.com",
-    messagingSenderId: "848381304196"
-  };
-  firebase.initializeApp(config);
-</script>
+
 
 <!-- Firebase App is always required and must be first -->
 <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
