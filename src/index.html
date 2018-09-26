@@ -97,8 +97,8 @@
       messaging.usePublicVapidKey('AIzaSyCy6Pj5L2JHERiPObGdp4-2dsn2sR3St-Y');
       // [END set_public_vapid_key]
 
-      function requestPermission() {
-        console.log('Requesting permission...');
+      //function requestPermission() {
+        //console.log('Requesting permission...');
       // [START request_permission]
         messaging.requestPermission().then(function() {
           console.log('Notification permission granted.');
@@ -106,18 +106,18 @@
         // [START_EXCLUDE]
         // In many cases once an app has been granted notification permission, it
         // should update its UI reflecting this.
-          resetUI();
+          //resetUI();
         // [END_EXCLUDE]
       }).catch(function(err) {
         console.log('Unable to get permission to notify.', err);
       });
       // [END request_permission]
-    }
+    //}
     
     
-    function resetUI() {
-    clearMessages();
-    showToken('loading...');
+    //function resetUI() {
+   // clearMessages();
+    //showToken('loading...');
     // [START get_token]
     // Get Instance ID token. Initially this makes a network call, once retrieved
     // subsequent calls to getToken will return from cache.
@@ -151,7 +151,7 @@
       sendTokenToServer(refreshedToken);
       // [START_EXCLUDE]
       // Display new Instance ID token and clear UI of all previous messages.
-      resetUI();
+     // resetUI();
       // [END_EXCLUDE]
     }).catch(function(err) {
       console.log('Unable to retrieve refreshed token ', err);
@@ -160,7 +160,7 @@
   });
   // [END refresh_token]
 
-  }
+  //}
 
   </script>
 
