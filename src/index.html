@@ -5,25 +5,25 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
   
-<!-- Firebase App is always required and must be first -->
+<!-- Firebase App is always required and must be first 
 <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-messaging.js"></script>
 
- <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script> -->
 
 
 <script>
   // Initialize Firebase
-  var config = {
+ /* var config = {
     apiKey: "AIzaSyDgC7WbYIVLnAyCql2fXOhwsCERl-HcdqY",
     authDomain: "authfirebase-40b1e.firebaseapp.com",
     databaseURL: "https://authfirebase-40b1e.firebaseio.com",
     projectId: "authfirebase-40b1e",
     storageBucket: "authfirebase-40b1e.appspot.com",
     messagingSenderId: "848381304196"
-  };
-  firebase.initializeApp(config);
+  }; */
+ // firebase.initializeApp(config);
 </script>
    
     <script src="lib/ionic/js/ionic.bundle.js"></script>
@@ -75,6 +75,8 @@
     <script src="js/services.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
     <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-messaging.js"></script>
+
     <script src="js/firebase.init.js"></script>
 
 
@@ -85,13 +87,13 @@
    <script>
       // [START get_messaging_object]
       // Retrieve Firebase Messaging object.
-      const messaging = firebase.messaging();
+     // const messaging = firebase.messaging();
       // [END get_messaging_object]
       // [START set_public_vapid_key]
       // Add the public key generated from the console here.
-      messaging.usePublicVapidKey('AIzaSyCy6Pj5L2JHERiPObGdp4-2dsn2sR3St-Y');
+      // messaging.usePublicVapidKey('AIzaSyCy6Pj5L2JHERiPObGdp4-2dsn2sR3St-Y');
       // [END set_public_vapid_key]
-
+/*
 messaging.requestPermission().then(function() {
   console.log('Notification permission granted.');
   // TODO(developer): Retrieve an Instance ID token for use with FCM.
@@ -135,7 +137,7 @@ messaging.onTokenRefresh(function() {
   });
 });
 
-
+*/
 
 </script>
 
