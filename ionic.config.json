@@ -1,5 +1,7 @@
 {
   "name": "TheoHIT238",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
